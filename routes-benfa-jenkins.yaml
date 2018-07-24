@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app: benfa-jenkins
+  name: benfa-jenkins
+spec:
+  host: benfa-jenkins.webplatformsnonprod.umich.edu
+  port:
+    targetPort: 8443-tcp
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: benfa-jenkins
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress:
+  - conditions:
+    - lastTransitionTime: 2018-05-23T18:48:29Z
+      status: "True"
+      type: Admitted
+    host: benfa-jenkins.webplatformsnonprod.umich.edu
+    routerName: router
+    wildcardPolicy: None
