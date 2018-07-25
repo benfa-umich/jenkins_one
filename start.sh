@@ -19,4 +19,4 @@ ln -sf /secrets/ssl/sha384-Intermediate-cert.pem /etc/ssl/certs/sha384-Intermedi
 ## Rehash command needs to be run before starting apache.
 c_rehash /etc/ssl/certs /secrets/ssl
 
-java -jar jenkins.war --httpPort=8088
+#java -jar jenkins.war --httpPort=8088
