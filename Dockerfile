@@ -1,4 +1,4 @@
-FROM jenkins:latest
+FROM jenkins:lts
 
 ENV JENKINS_HOME /var/jenkins_home
 COPY ./Jenkinsfile /var/jenkins_home
