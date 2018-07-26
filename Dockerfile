@@ -3,6 +3,7 @@ FROM jenkins:lts
 ENV JENKINS_HOME /var/jenkins_home
 COPY ./Jenkinsfile /var/jenkins_home
 RUN chown root.root /var/jenkins/home
+RUN chmod g+rw /var/jenkins_home
 
 COPY config.xml /var/lib/jenkins/config.xml
 
