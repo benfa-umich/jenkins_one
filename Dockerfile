@@ -9,8 +9,8 @@ FROM jenkins:lts
 
 #COPY config.xml /var/lib/jenkins/config.xml
 
-EXPOSE 8080
-EXPOSE 8443
+#EXPOSE 8080
+#EXPOSE 8443
 
 #COPY start.sh /usr/local/bin
 
