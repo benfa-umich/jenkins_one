@@ -1,18 +1,19 @@
 FROM jenkins:lts
 
-RUN usermod -G root jenkins
-RUN chown -R root.root /var/jenkins_home
-RUN chmod g+rw /var/jenkins_home
+#RUN usermod -G root jenkins
+#RUN chown -R root.root /var/jenkins_home
+#RUN chmod g+rw /var/jenkins_home
 
-ENV JENKINS_HOME /var/jenkins_home
-COPY ./Jenkinsfile /var/jenkins_home
+#ENV JENKINS_HOME /var/jenkins_home
+#COPY ./Jenkinsfile /var/jenkins_home
 
-COPY config.xml /var/lib/jenkins/config.xml
+#COPY config.xml /var/lib/jenkins/config.xml
 
 EXPOSE 8080
 EXPOSE 8443
 
-COPY start.sh /usr/local/bin
+#COPY start.sh /usr/local/bin
+
 #RUN chmod 755 /usr/local/bin/start.sh
 #CMD /usr/local/bin/start.sh
 
