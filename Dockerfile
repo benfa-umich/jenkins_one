@@ -1,8 +1,8 @@
 FROM jenkins:lts
 
-# In image file, 
-# ENV JENKINS_HOME /var/jenknins_home
-#COPY ./Jenkinsfile /var/jenkins_home
+ENV JENKINS_HOME /var/jenkins_home
+COPY ./Jenkinsfile /var/jenkins_home
+RUN chown root.root /var/jenkins/home
 
 COPY config.xml /var/lib/jenkins/config.xml
 
