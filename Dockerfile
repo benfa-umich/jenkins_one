@@ -7,10 +7,10 @@ FROM jenkins:lts
 #ENV JENKINS_HOME /var/jenkins_home
 #COPY ./Jenkinsfile /var/jenkins_home
 
-#COPY config.xml /var/lib/jenkins/config.xml
+COPY config.xml /var/lib/jenkins/config.xml
 
-#EXPOSE 8080
-#EXPOSE 8443
+EXPOSE 8080
+EXPOSE 8443
 
 #COPY start.sh /usr/local/bin
 
