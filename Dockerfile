@@ -1,8 +1,8 @@
 FROM jenkins:lts
 
-RUN usermod -G root jenkins
-RUN chown -R root.root /var/jenkins_home
-RUN chmod g+rw /var/jenkins_home
+#RUN usermod -G root jenkins
+#RUN chown -R root.root /var/jenkins_home
+#RUN chmod g+rw /var/jenkins_home
 
 #ENV JENKINS_HOME /var/jenkins_home
 #COPY ./Jenkinsfile /var/jenkins_home
