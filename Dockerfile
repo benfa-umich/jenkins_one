@@ -14,8 +14,8 @@ EXPOSE 8443
 
 #COPY start.sh /usr/local/bin
 
-#RUN chmod 755 /usr/local/bin/start.sh
-#CMD /usr/local/bin/start.sh
+RUN chmod 755 /usr/local/bin/start.sh
+CMD /usr/local/bin/start.sh
 
 # do here what start.sh would do
 #RUN ln -sf /secrets/ssl/AddTrustExternalCARoot.pem /etc/pki/tls/certs/AddTrustExternalCARoot.pem
