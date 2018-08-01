@@ -1,4 +1,4 @@
-FROM jenkins:lts
+FROM jenkins:latest
 
 #RUN usermod -G root jenkins
 #RUN chown -R root.root /var/jenkins_home
